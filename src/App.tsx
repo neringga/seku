@@ -5,11 +5,13 @@ import LandingPage from "./pages/LandingPage";
 import PricingPage from "./pages/PricingPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import SuccessPage from "./pages/SuccessPage";
+import ScrollToAnchor from "./components/ScrollToAnchor";
 
 export default function App() {
   return (
     <Router>
       <div className="min-h-screen bg-surface selection:bg-primary-container selection:text-primary">
+        <ScrollToAnchor />
         <Navbar />
         <main>
           <Routes>

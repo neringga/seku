@@ -55,7 +55,7 @@ export default function LandingPage() {
       </section>
 
       {/* Value Propositions */}
-      <section id="how-it-works" className="bg-surface-container-low py-32 px-8">
+      <section id="how-it-works" className="bg-surface-container-low py-32 px-8 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <h2 className="text-4xl font-serif text-on-surface mb-4">The Magic of Seku Storytelling</h2>
@@ -94,7 +94,7 @@ export default function LandingPage() {
       </section>
 
       {/* Featured Illustration */}
-      <section id="heirloom" className="py-32 px-8 max-w-7xl mx-auto">
+      <section id="heirloom" className="py-32 px-8 max-w-7xl mx-auto scroll-mt-20">
         <div className="flex flex-col md:flex-row items-center gap-20 bg-surface-container-lowest p-12 md:p-20 rounded-[3rem] shadow-sm">
           <div className="flex-1">
             <div className="rounded-2xl overflow-hidden aspect-square shadow-lg transform -rotate-2">
@@ -121,7 +121,7 @@ export default function LandingPage() {
       </section>
 
       {/* Testimonials */}
-      <section id="vision" className="py-32 px-8 bg-surface">
+      <section id="vision" className="py-32 px-8 bg-surface scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl font-serif mb-6">From Our Digital Hearth</h2>

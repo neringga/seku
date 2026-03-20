@@ -64,52 +64,74 @@ export default function PricingPage() {
         </div>
 
         {/* Pricing Options */}
-        <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* Monthly Plan */}
+        <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {/* Free Plan */}
           <motion.div 
             whileHover={{ y: -5 }}
-            className="bg-surface-container-low p-8 rounded-xl border-2 border-transparent hover:border-primary/20 transition-all flex flex-col justify-between"
+            className="bg-surface-container-low p-6 rounded-xl border-2 border-transparent hover:border-primary/20 transition-all flex flex-col justify-between"
           >
             <div>
-              <span className="text-xs font-bold tracking-widest text-primary uppercase">Flexible</span>
-              <h2 className="text-2xl font-serif mt-2 mb-4">Monthly</h2>
+              <span className="text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Starter</span>
+              <h2 className="text-xl font-serif mt-2 mb-4">Free</h2>
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold">$9.99</span>
-                <span className="text-on-surface-variant">/mo</span>
+                <span className="text-3xl font-bold">€0</span>
               </div>
-              <p className="mt-6 text-sm text-on-surface-variant leading-relaxed">
-                Perfect for families starting their storytelling journey with Seku. No commitment, cancel anytime.
+              <p className="mt-4 text-xs text-on-surface-variant leading-relaxed">
+                Experience the magic with 3 personalized stories to get you started.
               </p>
             </div>
-            <Link to="/checkout?plan=monthly">
-              <button className="mt-8 w-full py-4 rounded-xl bg-surface-container-high text-primary font-semibold hover:bg-primary hover:text-on-primary transition-all">
-                Select Monthly
+            <Link to="/signup">
+              <button className="mt-6 w-full py-3 rounded-xl bg-surface-container-high text-primary font-semibold hover:bg-primary hover:text-on-primary transition-all text-sm">
+                Get Started
               </button>
             </Link>
           </motion.div>
 
-          {/* Annual Plan */}
+          {/* Standard Plan */}
           <motion.div 
             whileHover={{ y: -5 }}
-            className="bg-surface-container-lowest p-8 rounded-xl ring-2 ring-primary/30 relative flex flex-col justify-between shadow-sm"
+            className="bg-surface-container-low p-6 rounded-xl border-2 border-transparent hover:border-primary/20 transition-all flex flex-col justify-between"
           >
-            <div className="absolute -top-3 right-8 bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+            <div>
+              <span className="text-[10px] font-bold tracking-widest text-primary uppercase">Flexible</span>
+              <h2 className="text-xl font-serif mt-2 mb-4">Standard</h2>
+              <div className="flex items-baseline gap-1">
+                <span className="text-3xl font-bold">€7.99</span>
+                <span className="text-on-surface-variant text-sm">/mo</span>
+              </div>
+              <p className="mt-4 text-xs text-on-surface-variant leading-relaxed">
+                Up to 30 stories per month. Perfect for consistent bedtime routines.
+              </p>
+            </div>
+            <Link to="/checkout?plan=standard">
+              <button className="mt-6 w-full py-3 rounded-xl bg-surface-container-high text-primary font-semibold hover:bg-primary hover:text-on-primary transition-all text-sm">
+                Select Standard
+              </button>
+            </Link>
+          </motion.div>
+
+          {/* Unlimited Plan */}
+          <motion.div 
+            whileHover={{ y: -5 }}
+            className="bg-surface-container-lowest p-6 rounded-xl ring-2 ring-primary/30 relative flex flex-col justify-between shadow-sm"
+          >
+            <div className="absolute -top-3 right-4 bg-primary text-on-primary text-[8px] font-bold px-2 py-1 rounded-full uppercase tracking-widest">
               Best Value
             </div>
             <div>
-              <span className="text-xs font-bold tracking-widest text-primary uppercase">Legacy</span>
-              <h2 className="text-2xl font-serif mt-2 mb-4">Annual</h2>
+              <span className="text-[10px] font-bold tracking-widest text-primary uppercase">Legacy</span>
+              <h2 className="text-xl font-serif mt-2 mb-4">Unlimited</h2>
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold">$79.99</span>
-                <span className="text-on-surface-variant">/yr</span>
+                <span className="text-3xl font-bold">€59.99</span>
+                <span className="text-on-surface-variant text-sm">/yr</span>
               </div>
-              <p className="mt-6 text-sm text-on-surface-variant leading-relaxed">
-                Save 33% and build a full year of bedtime magic. Our most popular choice for families growing with Seku.
+              <p className="mt-4 text-xs text-on-surface-variant leading-relaxed">
+                Unlimited stories for the whole year. Our most popular choice for growing families.
               </p>
             </div>
-            <Link to="/checkout?plan=annual">
-              <button className="mt-8 w-full py-4 rounded-xl bg-primary text-on-primary font-semibold shadow-lg hover:opacity-90 transition-all">
-                Select Annual
+            <Link to="/checkout?plan=unlimited">
+              <button className="mt-6 w-full py-3 rounded-xl bg-primary text-on-primary font-semibold shadow-lg hover:opacity-90 transition-all text-sm">
+                Select Unlimited
               </button>
             </Link>
           </motion.div>
